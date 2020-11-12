@@ -1,0 +1,124 @@
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+
+@import "vars"
+@import "fonts"
+// @import "animation"
+// @import "_mixins/remizer"
+@import "_mixins/emizer"
+
+// БАЗОВЫЙ SASS ->
+::placeholder
+  color: #c0c0c0
+
+::selection
+  color: #ffffff
+  background-color: $light-green
+
+body
+  position: relative
+  overflow-x: hidden
+  min-width: 320px
+  font-family: $text
+  font-size: 16px
+  line-height: 1.25
+  letter-spacing: 1.25px
+  color: $dark-text
+  input, textarea
+    margin: 0
+    padding: 0
+    outline: none
+
+b, strong
+  font-weight: bold
+
+a:hover
+  text-decoration: none
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+p
+  margin: 0
+  padding: 0
+
+button
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+  background: transparent
+  /* inherit font & color from ancestor */
+  color: inherit
+  font: inherit
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit
+  -moz-osx-font-smoothing: inherit
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+  &.img-width
+    width: 100%
+
+.lazy-container // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+  background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+// <- БАЗОВЫЙ SASS
+
+// НАСЛЕДОВАНИЯ ->
+// Кастомный outline ->
+%outline-basic
+  outline: #007bff solid thin
+  outline-offset: 10px
+  +media-breakpoint-down(md)
+      outline: none
+// <- Кастомный outline
+
+// Пунктирное подчеркивание ->
+%underline-dahsed-dark
+  background: linear-gradient(to right, $dark-text, $dark-text 50%, transparent 50%)
+  background-position: 0 100%
+  background-repeat: repeat-x
+  background-size: 3px 1px
+
+%underline-dahsed-light
+  background: linear-gradient(to right, $light-text, $light-text 50%, transparent 50%)
+  background-position: 0 100%
+  background-repeat: repeat-x
+  background-size: 3px 1px
+// <- Пунктирное подчеркивание
+// <- НАСЛЕДОВАНИЯ
+
+// CUSTOM SASS ->
+
+img
+  margin-bottom: 20px
+
+h2
+  text-align: center
+  padding-bottom: 20px
+@import "_parts/_main" // Закомментируйте для верстки по секциям
+@import "_parts/_screen-2--desc" // Закомментируйте для верстки по секциям
+@import "_parts/_screen-3--desc" // Закомментируйте для верстки по секциям
+@import "_parts/_screen-4--desc" // Закомментируйте для верстки по секциям
+@import "_parts/_footer" // Закомментируйте для верстки по секциям
+// @import "_parts/_buttons" // Закомментируйте для верстки по секциям
+// <- CUSTOM SASS
+
+@import "media" // Медиа запросы. Всегда в конце
