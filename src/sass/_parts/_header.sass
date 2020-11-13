@@ -1,0 +1,81 @@
+// BEGIN HEADER
+.header
+  height: 120px
+  padding-top: 20px
+  background: #ffffff
+  box-shadow: 0 0 20px rgba(0,0,0,0.1)
+
+.header-top-row
+  margin-bottom: 25px
+
+.logo__desc
+  display: inline-block
+  position: relative
+  padding-left: 60px
+  &::before
+    content: ''
+    position: absolute
+    top: 50%;
+    left: 0
+    height: 36px
+    width: 40px
+    background-image: url('../img/@2x/logo--header@2x.png')
+    transform: translateY(-50%);
+
+.logo__desc--bold
+  font-weight: bold
+
+.dropdown-city__btn
+  position: relative
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    top: 18px
+    left: 0
+    width: 55px
+    height: 1px
+    background: #b4bdc6
+  &:focus
+    outline: none
+
+.dropdown-city
+  padding-right: 35px;
+  text-align: right;
+  color: #b4bdc6
+
+.phone__number
+  display: block
+  color: $accent-blue
+  font-family: $f-text
+  font-size: em(19px)
+  font-weight: bold
+
+.phone__desc
+  display: block
+  margin-bottom: em(20px)
+  text-align: right
+  padding-right: 7px
+  color: $text-light
+  font-size: em(12px)
+
+.call-btn
+  color: #000000
+  height: 34px
+  width: 160px
+  background: $btn-green
+  cursor: pointer
+  border-radius: 3px
+  transition: $href-transition
+  &:focus
+    outline: none
+  &:hover
+    background: lighten($btn-green, 20%)
+
+.nav__item
+  color: $text-dark
+  font-size: em(12px)
+  margin-right: 70px
+  &:last-child
+    margin-right: 0
+// END HEADER

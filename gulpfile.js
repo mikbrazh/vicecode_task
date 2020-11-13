@@ -47,6 +47,7 @@ gulp.task('buildstyles', function() {
 gulp.task('buildvendorjs', function() {
   return gulp.src([ // Укажите путь к js библиотекам
     ''+srcFolder+'/libs/jquery/dist/jquery.min.js',
+    ''+srcFolder+'/libs/bootstrap/bootstrap.bundle.min.js',
     ''+srcFolder+'/libs/lazysizes/lazy.js',
     ])
   .pipe(concat('vendor.min.js'))

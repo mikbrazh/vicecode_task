@@ -1,5 +1,6 @@
-@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
-@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+// @import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+// @import "../libs/bootstrap/scss/bootstrap-grid.scss"
+@import "../libs/bootstrap/scss/bootstrap.scss"
 
 @import "vars"
 @import "fonts"
@@ -13,17 +14,17 @@
 
 ::selection
   color: #ffffff
-  background-color: $light-green
+  background-color: $accent-blue
 
 body
   position: relative
   overflow-x: hidden
   min-width: 320px
-  font-family: $text
+  font-family: $f-text
   font-size: 16px
   line-height: 1.25
   letter-spacing: 1.25px
-  color: $dark-text
+  color: $f-text
   input, textarea
     margin: 0
     padding: 0
@@ -85,40 +86,32 @@ button
 // Кастомный outline ->
 %outline-basic
   outline: #007bff solid thin
-  outline-offset: 10px
+  // outline-offset: 10px
   +media-breakpoint-down(md)
       outline: none
 // <- Кастомный outline
 
 // Пунктирное подчеркивание ->
-%underline-dahsed-dark
-  background: linear-gradient(to right, $dark-text, $dark-text 50%, transparent 50%)
-  background-position: 0 100%
-  background-repeat: repeat-x
-  background-size: 3px 1px
+// %underline-dahsed-dark
+//   background: linear-gradient(to right, $dark-text, $dark-text 50%, transparent 50%)
+//   background-position: 0 30px
+//   background-repeat: repeat-x
+//   background-size: 3px 1px
 
-%underline-dahsed-light
-  background: linear-gradient(to right, $light-text, $light-text 50%, transparent 50%)
-  background-position: 0 100%
-  background-repeat: repeat-x
-  background-size: 3px 1px
+// %underline-dahsed-light
+//   background: linear-gradient(to right, $light-text, $light-text 50%, transparent 50%)
+//   background-position: 0 100%
+//   background-repeat: repeat-x
+//   background-size: 3px 1px
 // <- Пунктирное подчеркивание
 // <- НАСЛЕДОВАНИЯ
 
 // CUSTOM SASS ->
 
-img
-  margin-bottom: 20px
 
-h2
-  text-align: center
-  padding-bottom: 20px
-@import "_parts/_main" // Закомментируйте для верстки по секциям
-@import "_parts/_screen-2--desc" // Закомментируйте для верстки по секциям
-@import "_parts/_screen-3--desc" // Закомментируйте для верстки по секциям
-@import "_parts/_screen-4--desc" // Закомментируйте для верстки по секциям
-@import "_parts/_footer" // Закомментируйте для верстки по секциям
-// @import "_parts/_buttons" // Закомментируйте для верстки по секциям
+
+
+@import "_parts/_header" // Закомментируйте для верстки по секциям
 // <- CUSTOM SASS
 
 @import "media" // Медиа запросы. Всегда в конце
