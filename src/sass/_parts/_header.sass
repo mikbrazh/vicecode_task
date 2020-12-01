@@ -1,81 +1,131 @@
 // BEGIN HEADER
 .header
+  min-width: 1200px
   height: 120px
-  padding-top: 20px
+  padding-top: 23px
   background: #ffffff
-  box-shadow: 0 0 20px rgba(0,0,0,0.1)
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+
+.container
+  min-width: 1140px
 
 .header-top-row
-  margin-bottom: 25px
+  margin-bottom: 26px
 
 .logo__desc
-  display: inline-block
   position: relative
-  padding-left: 60px
+  display: inline-block
+  padding-left: 56px
+  font-size: em(12px)
+  letter-spacing: em(0.5px)
   &::before
-    content: ''
     position: absolute
-    top: 50%;
+    top: 50%
     left: 0
     height: 36px
     width: 40px
     background-image: url('../img/@2x/logo--header@2x.png')
     transform: translateY(-50%);
+    content: ''
 
 .logo__desc--bold
   font-weight: bold
 
 .dropdown-city__btn
   position: relative
+  font-weight: bold
+  font-size: 14px
   cursor: pointer
-  &::before
-    content: ''
+  &:before
     position: absolute
     top: 18px
-    left: 0
-    width: 55px
+    left: 0px
+    width: 54px
     height: 1px
     background: #b4bdc6
+    content: ''
   &:focus
     outline: none
 
 .dropdown-city
+  margin-top: -5px
   padding-right: 35px;
   text-align: right;
   color: #b4bdc6
 
+.dropdown-city__label
+  font-size: em(13px)
+  letter-spacing: em(0.5px)
+  color: #000000
+
+.dropdown-menu
+  font-size: em(13px)
+  letter-spacing: em(0.5px)
+
 .phone__number
   display: block
-  color: $accent-blue
-  font-family: $f-text
+  margin-top: -7px
+  font-family: Arial
   font-size: em(19px)
   font-weight: bold
+  letter-spacing: em(0.2px)
+  text-align: right
+  color: $accent-blue
+  &:before
+    position: absolute
+    top: -5px
+    left: 18px
+    font-family: "fontAwesome"
+    color: $accent-blue
+    content: '\f095'
 
 .phone__desc
   display: block
   margin-bottom: em(20px)
-  text-align: right
-  padding-right: 7px
-  color: $text-light
   font-size: em(12px)
+  letter-spacing: em(0.2px)
+  text-align: right
+  color: $text-light
 
 .call-btn
-  color: #000000
-  height: 34px
   width: 160px
+  height: 34px
+  margin-top: -2px
+  font-size: em(14px)
+  color: #000000
   background: $btn-green
-  cursor: pointer
   border-radius: 3px
   transition: $href-transition
-  &:focus
-    outline: none
+  cursor: pointer
   &:hover
     background: lighten($btn-green, 20%)
+  &:focus
+    outline: none
 
 .nav__item
-  color: $text-dark
+  position: relative;
+  margin-right: 75px
   font-size: em(12px)
-  margin-right: 70px
+  letter-spacing: em(0.5px)
+  color: $text-dark
+  &:before
+    position: absolute
+    left: 0
+    bottom: -5px
+    display: block
+    width: 100%
+    height: 2px
+    background: $accent-blue
+    transition: opacity 0.3s ease-in-out
+    opacity: 0
+    content: ''
   &:last-child
     margin-right: 0
+  &:hover
+    color: $accent-blue
+  &:focus
+    color: #000000
+  &:focus:before
+    opacity: 1
+
 // END HEADER
