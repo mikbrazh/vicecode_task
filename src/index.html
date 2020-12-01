@@ -54,60 +54,27 @@
 </head>
 
 <body>
-  <!-- BEGIN HEADER -> -->
-  <header class="header">
+  <!-- MAIN -> -->
+  <main class="main">
     <div class="container">
 
       <div class="row">
-        <div class="col-10">
-
-          <div class="row header-top-row">
-            <div class="col">
-              <div class="logo">
-                <span class="logo__desc"><span class="logo__desc--bold">Настоящая</span> <br>Компьютерная помощь</span>
-              </div>
-            </div>
-            <div class="col">
-              <div class="dropdown dropdown-city">
-                  <span class="dropdown-city__label">Ваш город:</span>
-                  <button class="dropdown-toggle dropdown-city__btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Москва
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Москва</a>
-                    <a class="dropdown-item" href="#">Санкт-Петербург</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row header-bottom-row">
-            <div class="col">
-              <nav class="nav">
-                <a class="nav__item underline-decor" href="#">Ремонт ноутбуков</a>
-                <a class="nav__item" href="#">Ремонт компьютеров</a>
-                <a class="nav__item" href="#">Компьютерная помощь</a>
-                <a class="nav__item" href="#">Цены</a>
-                <a class="nav__item" href="#">О нас</a>
-                <a class="nav__item" href="#">Контакты</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-
         <div class="col">
-          <div class="phone">
-            <span class="phone__number">8 800 700 8000</span>
-            <span class="phone__desc">Работаем 24/7</span>
-          </div>
-          <button type="button" class="call-btn">Заказать звонок</button>
+          <h1 class="main-title"><span class="main-title--blue">СРОЧНАЯ</span> КОМПЬЮТЕРНАЯ<br>ПОМОЩЬ</h1>
+          <span class="main-desc">Повседневная практика показывает, что новая модель организационной деятельности представляет собой интересный эксперимент проверки новых предложений.</span>
         </div>
-
+        <div class="col"></div>
       </div>
 
+      <form class="cta-form" method="post" action="#">
+        <input class="cta-input" type="tel" placeholder="Ваш телефон">
+        <button class="cta-btn" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+      </form>
+
     </div>
-  </header>
-  <!-- END HEADER -> -->
+
+  </main>
+  <!-- <- MAIN -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/script.min.js"></script>

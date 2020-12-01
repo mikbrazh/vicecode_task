@@ -12,6 +12,12 @@
 .header-top-row
   margin-bottom: 26px
 
+.logo
+  color: $text-dark
+  cursor: pointer
+  &:hover
+    color: $text-dark
+
 .logo__desc
   position: relative
   display: inline-block
@@ -29,10 +35,11 @@
     content: ''
 
 .logo__desc--bold
-  font-weight: bold
+  font-family: $title
 
 .dropdown-city__btn
   position: relative
+  font-family: $title-db
   font-weight: bold
   font-size: 14px
   cursor: pointer
@@ -62,8 +69,11 @@
   font-size: em(13px)
   letter-spacing: em(0.5px)
 
+.phone
+  margin-top: -8px
+  text-align: right
+
 .phone__number
-  display: block
   margin-top: -7px
   font-family: Arial
   font-size: em(19px)
@@ -71,17 +81,21 @@
   letter-spacing: em(0.2px)
   text-align: right
   color: $accent-blue
+  &:hover
+    color: $accent-blue
   &:before
     position: absolute
-    top: -5px
+    top: -6px
     left: 18px
     font-family: "fontAwesome"
     color: $accent-blue
+    cursor: auto
     content: '\f095'
 
 .phone__desc
   display: block
-  margin-bottom: em(20px)
+  margin-top: em(5px)
+  margin-bottom: em(14px)
   font-size: em(12px)
   letter-spacing: em(0.2px)
   text-align: right
@@ -91,6 +105,7 @@
   width: 160px
   height: 34px
   margin-top: -2px
+  font-family: $title-db
   font-size: em(14px)
   color: #000000
   background: $btn-green
@@ -127,5 +142,4 @@
     color: #000000
   &:focus:before
     opacity: 1
-
 // END HEADER
