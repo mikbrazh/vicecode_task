@@ -5,7 +5,7 @@
 @import "vars"
 @import "fonts"
 // @import "animation"
-// @import "_mixins/remizer"
+@import "_mixins/remizer"
 @import "_mixins/emizer"
 
 // БАЗОВЫЙ SASS ->
@@ -19,9 +19,9 @@
 body
   position: relative
   overflow-x: hidden
-  min-width: 320px
+  min-width: 1200px
+  // min-width: 320px
   font-family: $text
-  font-size: 16px
   line-height: 1.25
   letter-spacing: 1.25px
   color: $text
@@ -106,13 +106,16 @@ button
 // <- Пунктирное подчеркивание
 // <- НАСЛЕДОВАНИЯ
 
+.container
+  min-width: 1140px
+
 // CUSTOM SASS ->
 
 
 
 
+@import "_parts/_header" // Закомментируйте для верстки по секциям
 @import "_parts/_main" // Закомментируйте для верстки по секциям
-// @import "_parts/_header" // Закомментируйте для верстки по секциям
 // <- CUSTOM SASS
 
 @import "media" // Медиа запросы. Всегда в конце

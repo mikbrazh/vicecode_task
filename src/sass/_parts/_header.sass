@@ -1,16 +1,12 @@
 // BEGIN HEADER
 .header
-  min-width: 1200px
-  height: 120px
-  padding-top: 23px
+  height: rem(120px)
+  padding-top: rem(23px)
   background: #ffffff
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
 
-.container
-  min-width: 1140px
-
 .header-top-row
-  margin-bottom: 26px
+  margin-bottom: rem(26px)
 
 .logo
   color: $text-dark
@@ -22,7 +18,7 @@
   position: relative
   display: inline-block
   padding-left: 56px
-  font-size: em(12px)
+  font-size: rem(12px)
   letter-spacing: em(0.5px)
   &::before
     position: absolute
@@ -41,23 +37,23 @@
   position: relative
   font-family: $title-db
   font-weight: bold
-  font-size: 14px
+  font-size: rem(14px)
   cursor: pointer
   &:before
     position: absolute
-    top: 18px
+    top: em(20px)
     left: 0px
-    width: 54px
-    height: 1px
+    width: em(63px)
+    height: em(1px)
     background: #b4bdc6
     content: ''
   &:focus
     outline: none
 
 .dropdown-city
-  margin-top: -5px
-  padding-right: 35px;
-  text-align: right;
+  margin-top: rem(-5px)
+  padding-right: rem(32px)
+  text-align: right
   color: #b4bdc6
 
 .dropdown-city__label
@@ -66,17 +62,17 @@
   color: #000000
 
 .dropdown-menu
-  font-size: em(13px)
+  font-size: rem(13px)
   letter-spacing: em(0.5px)
 
 .phone
-  margin-top: -8px
+  margin-top: rem(-8px)
   text-align: right
 
 .phone__number
-  margin-top: -7px
+  margin-top: rem(-7px)
   font-family: Arial
-  font-size: em(19px)
+  font-size: rem(19px)
   font-weight: bold
   letter-spacing: em(0.2px)
   text-align: right
@@ -85,8 +81,8 @@
     color: $accent-blue
   &:before
     position: absolute
-    top: -6px
-    left: 18px
+    top: em(-6px)
+    left: em(18px)
     font-family: "fontAwesome"
     color: $accent-blue
     cursor: auto
@@ -94,22 +90,22 @@
 
 .phone__desc
   display: block
-  margin-top: em(5px)
-  margin-bottom: em(14px)
-  font-size: em(12px)
-  letter-spacing: em(0.2px)
+  margin-top: em(-1px)
+  margin-bottom: em(21px)
+  margin-right: em(5px)
+  font-size: rem(12px)
+  letter-spacing: 0px
   text-align: right
   color: $text-light
 
 .call-btn
-  width: 160px
-  height: 34px
-  margin-top: -2px
+  padding: em(9px) em(24px) em(9px) em(24px)
+  margin-top: em(-2px)
   font-family: $title-db
-  font-size: em(14px)
+  font-size: rem(14px)
   color: #000000
   background: $btn-green
-  border-radius: 3px
+  border-radius: em(4px)
   transition: $href-transition
   cursor: pointer
   &:hover
@@ -119,17 +115,17 @@
 
 .nav__item
   position: relative;
-  margin-right: 75px
-  font-size: em(12px)
+  margin-right: em(100px)
+  font-size: rem(12px)
   letter-spacing: em(0.5px)
   color: $text-dark
   &:before
     position: absolute
     left: 0
-    bottom: -5px
+    bottom: em(-5px)
     display: block
     width: 100%
-    height: 2px
+    height: em(3px)
     background: $accent-blue
     transition: opacity 0.3s ease-in-out
     opacity: 0
