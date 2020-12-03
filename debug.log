@@ -1,1 +1,5 @@
 [1202/092237.795:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1203/094227.114:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1203/094227.116:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\mikbrazh\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\f17ba3f8-82c3-4e33-b65d-0a3ccead9a79: Системе не удается найти указанный путь. (0x3)
+[1203/094227.123:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\mikbrazh\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2d1bc00d-92da-46c1-9079-0d27bbc24767: Системе не удается найти указанный путь. (0x3)
+[1203/094227.124:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\mikbrazh\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5d76c260-0628-4ca6-8695-0c0e5d0e9a9a: Системе не удается найти указанный путь. (0x3)
