@@ -4,7 +4,6 @@
 
 .sec-2-title
   margin-bottom: em(25px)
-  padding-top: em(62px)
   font-family: $title
   font-size: rem(24px)
   letter-spacing: em(0.5px)
@@ -18,33 +17,58 @@
   background: #eaf7ff
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
 
-.notebook-item
+.grid--notebook
+  margin-bottom: em(56px)
+
+.grid--desktop
+  margin-bottom: em(50px)
+
+.grid--help
+  margin-bottom: em(52px)
+  
+.grid--brands
+  margin-bottom: em(50px)
+
+.notebook-item, .desktop-item, .help-item, .brands-item
   padding: 0 20px 0 20px
   background: #ffffff
 
-.notebook-item--1
-  padding: 0 40px 0 40px
+.notebook-item--1, .desktop-item--1, .help-item--1, .brands-item--1
+  padding: 0 35px 0 35px
   border-radius: 5px 0 0 0
 
-.notebook-item--5
+.notebook-item--5, .desktop-item--5, .help-item--5, .brands-item--5
   border-radius: 0 5px 0 0
 
-.notebook-item--6
+.notebook-item--6, .desktop-item--6, .help-item--6, .brands-item--6
   border-radius: 0 0 0 5px
 
-.notebook-item--10
+.notebook-item--10, .desktop-item--10, .help-item--10, .brands-item--10
   border-radius: 0 0 5px 0
 
-.notebook-item__text
+.notebook-item__text, .desktop-item__text, .help-item__text, .brands-item__text
   position: relative
   display: block
-  padding-top: 107px
   font-family: $title
   font-size: rem(15px)
   letter-spacing: em(0.1px)
   text-align: center
 
-.notebook-item__text:before
+.notebook-item__text--1,
+.notebook-item__text--2,
+.notebook-item__text--3,
+.notebook-item__text--4,
+.notebook-item__text--5
+  padding-top: 107px
+
+.notebook-item__text--6,
+.notebook-item__text--7,
+.notebook-item__text--8,
+.notebook-item__text--9,
+.notebook-item__text--10
+  padding-top: 103px
+
+.notebook-item__text:before, .desktop-item__text:before, .help-item__text:before, .brands-item__text:before
   position: absolute
   left: 50%
   bottom: em(60px)
@@ -114,6 +138,256 @@
   height: 62px
   margin-left: calc(-89px/2)
   background-image: url('../img/@2x/icon-10a--screen-3@2x.png')
+
+.desktop-item__text--1,
+.desktop-item__text--2,
+.desktop-item__text--3,
+.desktop-item__text--4,
+.desktop-item__text--5
+  padding-top: 100px
+
+.desktop-item__text--6,
+.desktop-item__text--7,
+.desktop-item__text--8,
+.desktop-item__text--9,
+.desktop-item__text--10
+  padding-top: 95px
+
+.desktop-item__text:before
+  bottom: em(35px)
+
+.desktop-item__text--1:before
+  width: 73px
+  height: 61px
+  margin-left: calc(-73px/2)
+  background-image: url('../img/@2x/icon-1b--screen-3@2x.png')
+
+.desktop-item__text--2:before
+  width: 63px
+  height: 63px
+  margin-left: calc(-63px/2)
+  background-image: url('../img/@2x/icon-2b--screen-3@2x.png')
+
+.desktop-item__text--3:before
+  width: 64px
+  height: 62px
+  margin-left: calc(-64px/2)
+  background-image: url('../img/@2x/icon-3b--screen-3@2x.png')
+
+.desktop-item__text--4:before
+  bottom: em(55px)
+  width: 82px
+  height: 69px
+  margin-left: calc(-82px/2)
+  background-image: url('../img/@2x/icon-4b--screen-3@2x.png')
+
+.desktop-item__text--5:before
+  width: 44px
+  height: 65px
+  margin-left: calc(-44px/2)
+  background-image: url('../img/@2x/icon-5b--screen-3@2x.png')
+
+.desktop-item__text--6:before
+  width: 66px
+  height: 62px
+  margin-left: calc(-66px/2)
+  background-image: url('../img/@2x/icon-6b--screen-3@2x.png')
+
+.desktop-item__text--7:before
+  width: 74px
+  height: 62px
+  margin-left: calc(-74px/2)
+  background-image: url('../img/@2x/icon-7b--screen-3@2x.png')
+
+.desktop-item__text--8:before
+  bottom: em(55px)
+  width: 69px
+  height: 62px
+  margin-left: calc(-69px/2)
+  background-image: url('../img/@2x/icon-8b--screen-3@2x.png')
+
+.desktop-item__text--9:before
+  width: 76px
+  height: 62px
+  margin-left: calc(-76px/2)
+  background-image: url('../img/@2x/icon-9b--screen-3@2x.png')
+
+.desktop-item__text--10:before
+  width: 71px
+  height: 62px
+  margin-left: calc(-71px/2)
+  background-image: url('../img/@2x/icon-10b--screen-3@2x.png')
+
+.help-item--2, .help-item--4
+  padding: 0 45px 0 45px
+
+.help-item--8
+  padding: 0
+
+.help-item__text--1,
+.help-item__text--2,
+.help-item__text--3,
+.help-item__text--4,
+.help-item__text--5
+  padding-top: 105px
+
+.help-item__text--6,
+.help-item__text--7,
+.help-item__text--8,
+.help-item__text--9,
+.help-item__text--10
+  padding-top: 100px
+
+.help-item__text:before
+  bottom: em(55px)
+
+.help-item__text--1:before
+  width: 92px
+  height: 65px
+  margin-left: calc(-92px/2)
+  background-image: url('../img/@2x/icon-1c--screen-3@2x.png')
+
+.help-item__text--2:before
+  bottom: em(53px)
+  width: 63px
+  height: 73px
+  margin-left: calc(-63px/2)
+  background-image: url('../img/@2x/icon-2c--screen-3@2x.png')
+
+.help-item__text--3:before
+  width: 67px
+  height: 67px
+  margin-left: calc(-67px/2)
+  background-image: url('../img/@2x/icon-3c--screen-3@2x.png')
+
+.help-item__text--4:before
+  bottom: em(53px)
+  width: 51px
+  height: 65px
+  margin-left: calc(-51px/2)
+  background-image: url('../img/@2x/icon-4c--screen-3@2x.png')
+
+.help-item__text--5:before
+  width: 65px
+  height: 62px
+  margin-left: calc(-65px/2)
+  background-image: url('../img/@2x/icon-5c--screen-3@2x.png')
+
+.help-item__text--6:before
+  bottom: em(37px)
+  width: 61px
+  height: 58px
+  margin-left: calc(-61px/2)
+  background-image: url('../img/@2x/icon-6c--screen-3@2x.png')
+
+.help-item__text--7:before
+  bottom: em(34px)
+  width: 62px
+  height: 61px
+  margin-left: calc(-62px/2)
+  background-image: url('../img/@2x/icon-7c--screen-3@2x.png')
+
+.help-item__text--8:before
+  bottom: em(55px)
+  width: 61px
+  height: 63px
+  margin-left: calc(-61px/2)
+  background-image: url('../img/@2x/icon-8c--screen-3@2x.png')
+
+.help-item__text--9:before
+  bottom: em(34px)
+  width: 51px
+  height: 67px
+  margin-left: calc(-51px/2)
+  background-image: url('../img/@2x/icon-9c--screen-3@2x.png')
+
+.help-item__text--10:before
+  bottom: em(50px)
+  width: 98px
+  height: 69px
+  margin-left: calc(-98px/2)
+  background-image: url('../img/@2x/icon-10c--screen-3@2x.png')
+
+.brands-item__text--1,
+.brands-item__text--2,
+.brands-item__text--3,
+.brands-item__text--4,
+.brands-item__text--5
+  padding-top: 115px
+
+.brands-item__text--6,
+.brands-item__text--7,
+.brands-item__text--8,
+.brands-item__text--9,
+.brands-item__text--10
+  padding-top: 110px
+
+.brands-item__text:before
+  bottom: em(60px)
+
+.brands-item__text--1:before
+  width: 130px
+  height: 20px
+  margin-left: calc(-130px/2)
+  background-image: url('../img/@2x/icon-1d--screen-3@2x.png')
+
+.brands-item__text--2:before
+  bottom: em(65px)
+  width: 132px
+  height: 22px
+  margin-left: calc(-132px/2)
+  background-image: url('../img/@2x/icon-2d--screen-3@2x.png')
+
+.brands-item__text--3:before
+  width: 114px
+  height: 22px
+  margin-left: calc(-114px/2)
+  background-image: url('../img/@2x/icon-3d--screen-3@2x.png')
+
+.brands-item__text--4:before
+  width: 129px
+  height: 30px
+  margin-left: calc(-129px/2)
+  background-image: url('../img/@2x/icon-4d--screen-3@2x.png')
+
+.brands-item__text--5:before
+  width: 121px
+  height: 28px
+  margin-left: calc(-121px/2)
+  background-image: url('../img/@2x/icon-5d--screen-3@2x.png')
+
+.brands-item__text--6:before
+  width: 131px
+  height: 20px
+  margin-left: calc(-131px/2)
+  background-image: url('../img/@2x/icon-6d--screen-3@2x.png')
+
+.brands-item__text--7:before
+  width: 110px
+  height: 28px
+  margin-left: calc(-110px/2)
+  background-image: url('../img/@2x/icon-7d--screen-3@2x.png')
+
+.brands-item__text--8:before
+  bottom: em(38px)
+  width: 63px
+  height: 63px
+  margin-left: calc(-63px/2)
+  background-image: url('../img/@2x/icon-8d--screen-3@2x.png')
+
+.brands-item__text--9:before
+  bottom: em(40px)
+  width: 113px
+  height: 56px
+  margin-left: calc(-113px/2)
+  background-image: url('../img/@2x/icon-9d--screen-3@2x.png')
+
+.brands-item__text--10:before
+  bottom: em(50px)
+  width: 110px
+  height: 34px
+  margin-left: calc(-110px/2)
+  background-image: url('../img/@2x/icon-10d--screen-3@2x.png')
 
 
 
