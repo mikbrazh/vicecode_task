@@ -22,21 +22,10 @@ var gulp          = require('gulp'),
     newer         = require('gulp-newer'),
     browserSync   = require('browser-sync'),
     rsync         = require('gulp-rsync'),
-    notify        = require('gulp-notify'),
-    fileinclude   = require('gulp-file-include');
+    notify        = require('gulp-notify');
 // <- ПЕРЕМЕННЫЕ
 
 // КОМПИЛЯЦИЯ, КОНКАТИНАЦИЯ, МИНИФИКАЦИЯ ->
-// Сборка частей html в bundle.html
-gulp.task('fileinclude', function() {
-  gulp.src([''+srcFolder+'/index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest(''+srcFolder+'/parts/bundle'));
-});
-
 // Минификация HTML и перенос в директорию distFolder
 gulp.task('buildhtml', function() {
   return gulp.src(''+srcFolder+'/*.html')

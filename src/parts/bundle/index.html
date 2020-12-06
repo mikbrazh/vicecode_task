@@ -54,7 +54,60 @@
 </head>
 
 <body>
-@@include('parts/header.html')
+<!-- BEGIN HEADER -> -->
+<header class="header" id="header">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-10">
+
+        <div class="row header-top-row">
+          <div class="col">
+            <a class="logo" href="#">
+              <span class="logo__desc"><span class="logo__desc--bold">Настоящая</span> <br>Компьютерная помощь</span>
+            </a>
+          </div>
+          <div class="col">
+            <div class="dropdown dropdown-city">
+                <span class="dropdown-city__label">Ваш город:</span>
+                <button class="dropdown-toggle dropdown-city__btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Москва
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Москва</a>
+                  <a class="dropdown-item" href="#">...</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row header-bottom-row">
+          <div class="col">
+            <nav class="nav">
+              <a class="nav__item underline-decor" href="#">Ремонт ноутбуков</a>
+              <a class="nav__item" href="#">Ремонт компьютеров</a>
+              <a class="nav__item" href="#">Компьютерная помощь</a>
+              <a class="nav__item" href="#">Цены</a>
+              <a class="nav__item" href="#">О нас</a>
+              <a class="nav__item" href="#">Контакты</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="phone">
+          <a class="phone__number" href="tel:+8007008000">8 800 700 8000</a>
+          <span class="phone__desc">Работаем 24/7</span>
+        </div>
+        <button type="button" class="call-btn">Заказать звонок</button>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+<!-- END HEADER -> -->
 <!-- BEGIN SECTION-4 -->
 <section class="sec-4">
   <div class="container">
