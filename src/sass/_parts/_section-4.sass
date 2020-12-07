@@ -1,10 +1,10 @@
 // BEGIN SECTION-4
 .sec-4
-  padding-top: 50px
-  padding-bottom: 100px
+  padding-top: rem(94px)
+  padding-bottom: rem(100px)
 
 .sec-4-title
-  margin-bottom: em(30px)
+  margin-bottom: em(27px)
   font-family: $title
   font-size: rem(30px)
   letter-spacing: em(0.5px)
@@ -14,28 +14,45 @@
   display: flex
   align-items: center
   justify-content: space-between
-  margin-bottom: 20px
-  padding: 18px 30px 18px 30px
+  margin-bottom: rem(23px)
+  padding: rem(15px) rem(30px) rem(15px) rem(30px)
   background-color: #ffffff
   border-radius: 5px
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
   &:last-child
     margin-bottom: 0
 
+.sec-4-item--lg
+  padding-top: rem(25px)
+  padding-bottom: rem(25px)
+
 .sec-4-item__text, .sec-4-item__price, .sec-4-item__btn
   display: inline-block
 
 .sec-4-item__text
-  width: 500px
+  width: 670px
+  font-family: $title
+  font-size: rem(12px)
+  letter-spacing: em(0.1px)
+  line-height: 1.7
+
+.sec-4-item__price
+  padding-right: rem(115px)
   font-family: $title-db
-  font-size: em(16px)
-  letter-spacing: em(0.5)
+  font-size: rem(12px)
+  letter-spacing: em(0.5px)
+
+.sec-4-item_num
+  font-family: Arial
+  font-size: rem(16px)
+  letter-spacing: em(0.5px)
+
 
 .sec-4-item__btn
   align-self: flex-start
-  padding: 10px 30px 10px 30px
+  padding: em(10px) em(34px) em(10px) em(34px)
   font-family: $title-db
-  font-size: em(16px)
+  font-size: rem(13px)
   letter-spacing: em(0.5px)
   color: #ffffff
   border-radius: 5px

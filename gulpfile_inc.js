@@ -10,6 +10,7 @@ var syntax          = 'sass', // Установите значение «sass» 
 var gulp          = require('gulp'),
     sass          = require('gulp-sass'),
     autoprefixer  = require('gulp-autoprefixer'),
+    fileinclude   = require('gulp-file-include'),
     htmlmin       = require('gulp-htmlmin'),
     cleancss      = require('gulp-clean-css'),
     concat        = require('gulp-concat'),
@@ -26,9 +27,18 @@ var gulp          = require('gulp'),
 // <- ПЕРЕМЕННЫЕ
 
 // КОМПИЛЯЦИЯ, КОНКАТИНАЦИЯ, МИНИФИКАЦИЯ ->
+// Сборка частей html в parts/bundle/index.html
+gulp.task('fileinclude', function() {
+  gulp.src([''+srcFolder+'/index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest(''+srcFolder+'/parts/bundle'));
+});
 // Минификация HTML и перенос в директорию distFolder
 gulp.task('buildhtml', function() {
-  return gulp.src(''+srcFolder+'/*.html')
+  return gulp.src(''+srcFolder+'/parts/bundle/*.html')
     .pipe(htmlmin({collapseWhitespace: true})) // Закомментируйте для отключения минификации
     .pipe(gulp.dest(distFolder))
     .pipe(browserSync.reload({ stream: true }));
@@ -182,11 +192,13 @@ gulp.task('rsync', function() {
 
 // СЛЕЖЕНИЕ ЗА ИЗМЕНЕНИЯМИ ФАЙЛОВ ->
 gulp.task('watch', function() {
-  gulp.watch(''+srcFolder+'/*.html', gulp.parallel('buildhtml'));
+  // gulp.watch(''+srcFolder+'/*.html', gulp.parallel('fileinclude'));
+  gulp.watch(''+srcFolder+'/parts/bundle/*.html', gulp.parallel('buildhtml'));
   gulp.watch(''+srcFolder+'/'+syntax+'/**/*.'+syntax+'', gulp.parallel('buildstyles'));
   gulp.watch(['libs/**/*.js', ''+srcFolder+'/js/script.js'], gulp.parallel('buildscripts'));
 });
 // <- СЛЕЖЕНИЕ ЗА ИЗМЕНЕНИЯМИ ФАЙЛОВ
 
 // Таск по умолчанию
-gulp.task('default', gulp.parallel('buildhtml', 'buildstyles', 'buildscripts', 'browser-sync', 'watch'));
+// gulp.task('default', gulp.parallel('fileinclude', 'buildhtml', 'buildstyles', 'buildscripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('fileinclude', 'buildhtml', 'buildstyles', 'buildscripts', 'browser-sync', 'watch'));
